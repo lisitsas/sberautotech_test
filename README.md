@@ -32,7 +32,7 @@ current_index[50627]
 ```
 
 ## Ответ: лог-файл canbus.log, файл после обработки canbus_out.log
-
+```
 $ cat canbus.log
 23:36:50.385608 1234 channel[/canbus/chassis] read buffer overflow, drop_message[1] pre_index[50493] current_index[50494]
 23:36:50.406280 1219 channel[/canbus/chassis] read buffer overflow, drop_message[1] pre_index[50496] current_index[50497]
@@ -42,13 +42,16 @@ $ cat canbus.log
 23:36:50.626286 1229 channel[/localization/msf_status] read buffer overflow, drop_message[1] pre_index[50540] current_index[50541]
 23:36:50.627403 1233 channel[/localization/msf_status] read buffer overflow, drop_message[1] pre_index[50542] current_index[50543]
 23:36:51.703788 1221 channel[/canbus/chassis] read buffer overflow, drop_message[1] pre_index[50626] current_index[50627]
-
+```
+```
 $ cat canbus_out.log
 /canbus/chassis 1 50493-50494
 /canbus/chassis 1 50496-50497
 /canbus/chassis 1 50595-50596
 /canbus/chassis 1 50613-50614
 /canbus/chassis 1 50626-50627
-
+```
 ## Вызов скрипта
+```
 $ ./canbus.sh canbus.log
+```
